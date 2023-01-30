@@ -1,14 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    color: white !important;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+/*Overrides the color of the active state class tag in bootstrap*/
+.navbar-nav, .active{
+    color: #CBB129 !important;
 }
 
 body{
     width: 100%;
     min-height: 100vh;
-    /* background: linear-gradient(#003aff 40%, #ffff 40%) ; */
-    /* background-image: url("https://th.bing.com/th/id/R.67144d43d483df4053a69b0110276e0d?rik=zhUlgjQRoKXUjA&riu=http%3a%2f%2fwww.gannett-cdn.com%2f-mm-%2faa0dd5dac8cbe919e3279954b4cb20d8a8791bf0%2fc%3d0-0-3068-1733%2flocal%2f-%2fmedia%2f2015%2f07%2f09%2fUSATODAY%2fExperienceAmerica%2f635720444017494266-Colorado---Matt-Inden-Colorado-Tourism-Office.jpg%3fwidth%3d3200%26height%3d1680%26fit%3dcrop&ehk=IsFFY7qeGF6CX6F3lKIE%2fT6cKddRRUaLOsD%2f4a6hxYU%3d&risl=&pid=ImgRaw&r=0");
-    background-size: cover;
-    background-repeat: no-repeat; */
+    background-color: #002B4A;
+}
+
+.navbar{
+    background-color: black;
+    color: white;
+    border-bottom: solid;
+}
+
+.main-content{
+    color: black;
+}
+
+.left-side{
+    width: 50%;
+    height: 90vh;
+}
+
+.right-side{
+    width: 50%;
+    height: 90vh;
+}
+
+.greeting{
+    height: 90vh;
+}
+
+/* .Welcome{
+    font-weight: 500 ;
+} */
+
+.btn{
+    background-color: black;
 }
