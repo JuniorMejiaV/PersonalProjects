@@ -1,3 +1,5 @@
+/* ALL PAGES */
+
 @import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&display=swap');
 
 *{
@@ -24,6 +26,8 @@ body, html{
     color: white;
 }
 
+/* HOME PAGE */
+
 .background-image{
     position: relative;
     background-position: center;
@@ -49,3 +53,23 @@ body, html{
 .btn:hover{
     background-color: #CBB129;
 }
+
+
+/* CONTACT ME */
+
+.main-contact{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-form{
+    background-color: black;
+}
+
+.input-group-text{
+    color: black !important;
+}
+
