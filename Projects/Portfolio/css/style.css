@@ -6,7 +6,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: white !important;
+    color: #ffff !important;
     font-family: 'Roboto Serif', sans-serif;
 }
 
@@ -22,8 +22,8 @@ body, html{
 }
 
 .navbar{
-    background-color: black;
-    color: white;
+    background-color: #000000;
+    color: #ffff;
 }
 
 /* HOME PAGE */
@@ -46,30 +46,45 @@ body, html{
     height: max-content;
 }
 
-.btn{
-    background-color: black;
-}
-
 .btn:hover{
-    background-color: #CBB129;
+    background-color: #000000;
+    border: none;
 }
 
+a{
+    text-decoration: none;
+}
 
 /* CONTACT ME */
 
 .main-contact{
-    width: 100%;
-    height: 100%;
+    /* width: auto;
+    height: auto; */
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.contact-form{
-    background-color: black;
+.header-contact{
+    background-color: #002B4A;
+    border-color: #002B4A;
+}
+
+.contact-card{
+    background-color: #000000;
+    border-radius: 25px;
+    border: none;
 }
 
 .input-group-text{
-    color: black !important;
+    color: #000000 !important;
 }
 
+.card-body{
+    margin: 10 10 10 10;
+    border-radius: 25px;
+}
+
+input, textarea{
+    color: #000000 !important ;
+}
