@@ -6,24 +6,32 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    color: #ffff !important;
     font-family: 'Roboto Serif', sans-serif;
 }
 
-/*Overrides the color of the active state class tag in bootstrap*/
-.navbar-nav, .active{
+.navbar-nav, .active{ /*Overrides the color of the active state class tag in bootstrap*/
     color: #CBB129 !important;
 }
 
 body, html{
     height: 100%;
     margin: 0;
-    background-color: #002B4A;
 }
 
 .navbar{
-    background-color: #000000;
-    color: #ffff;
+    background-color: #002B4A;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: #CBB129;
+} 
+
+.logo{
+    color: white;
 }
 
 /* HOME PAGE */
@@ -46,13 +54,39 @@ body, html{
     height: max-content;
 }
 
-.btn:hover{
-    background-color: #000000;
-    border: none;
+.project-btn{
+    color: white;
+}
+
+.project-btn:hover{
+    color: black;
+    background-color: #198754;
 }
 
 a{
     text-decoration: none;
+}
+
+/* EXPERIENCE */
+
+li{
+    list-style: none;
+}
+
+.tntechlogo, .twinlakeslogo, .itslogo, .saiclogo{
+    width: 10%;
+    height: 10%;
+}
+
+.school-info, .twinlakes-info, .its-info, .saic-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr.break{
+    border-top: 1px solid black;
 }
 
 /* CONTACT ME */
@@ -65,26 +99,16 @@ a{
     justify-content: center;
 }
 
-.header-contact{
-    background-color: #002B4A;
-    border-color: #002B4A;
-}
-
 .contact-card{
-    background-color: #000000;
     border-radius: 25px;
-    border: none;
+    border: solid 1px black;
 }
 
-.input-group-text{
-    color: #000000 !important;
-}
-
-.card-body{
+.card-body-contact{
     margin: 10 10 10 10;
     border-radius: 25px;
 }
 
-input, textarea{
-    color: #000000 !important ;
+.fa-brands{
+    color: black;
 }
