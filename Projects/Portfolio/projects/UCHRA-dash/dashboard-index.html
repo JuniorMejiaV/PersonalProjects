@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+  <link rel="stylesheet" href="../UCHRA-dash/css/dashboard-style.css">
+  <title>Login</title>
+</head>
+<body>
+  <div class="container">
+    <div class="logo mt-2 mb-2">
+      <img class="mr-0" id="logo" src="images/publictransportation.png" alt="UCHRA Public Transportation Logo">
+    </div>
+    <div class="forms-login">
+      <div class="form-login">
+        <span class="title">Login</span>
+        <form action="#">
+          <div class="input-field">
+            <input type="text" placeholder="Enter your email" id="txtLoginEmail" required>
+            <i class="uil uil-envelope"></i>
+          </div>
+          <div class="input-field">
+            <input type="password" class="password" placeholder="Enter your password" id="txtLoginPassword" required>
+            <i class="uil uil-lock icon"></i>
+            <!--<i class='uil uil-eye-slash showHidePw'></i>-->
+          </div>
+          <div class="checkbox-text">
+            <div class="checkbox-content">
+              <input type="checkbox" style="margin: 0 8px -2px 4px; accent-color: #4070f4; " id="logCheck">
+              <label for="logCheck" class="text"> Remember me</label>
+            </div>
+            <!-- <a href="#" class="text">Forgot Password?</a> -->
+          </div>
+          <div class="input-field button">
+            <input type="button" value="Login" id="btnAdminLogin">
+          </div>
+        </form>
+        <div class="login-signup">
+          <span class="text">Don't have a account?
+            <a href="signup.html" class="text signup-text">Signup</a>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="../UCHRA-dash/js/dashboard-app.js"></script>
+</body>
+
+</html>

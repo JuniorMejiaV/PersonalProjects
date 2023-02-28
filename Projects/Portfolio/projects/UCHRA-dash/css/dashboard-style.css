@@ -1,0 +1,328 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap');
+
+
+/*ALL PAGES*/
+*{
+    font-family: 'Roboto',sans-serif;
+    font-weight: 300;
+}
+
+.uchra-logo{
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+img{
+    width: 100;
+    height: 100;
+}
+
+.card-header{
+    margin-top: 10px ;
+}
+
+.sticky{
+    position: sticky;
+    top: 0;
+}
+
+.content-title{
+    display: flex;
+    justify-content: center;
+}
+
+.content-graphs{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.graph-flexbox{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.container-buttons{
+    display: flex;
+    justify-content: space-between;
+}
+
+/* LOGIN & SIGNUP */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #304963;
+}
+
+.centered {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    /* bring your own prefixes */
+    transform: translate(-50%, -50%);
+}
+
+.container {
+    position: relative;
+    max-width: 430px;
+    width: 100%;
+}
+
+#logo{
+    display: flex;
+    width: 100;
+    height: 100;
+}
+
+.forms-login {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    /*background-color: red;*/
+    transition: height 0.2s ease;
+}
+
+.forms-signup {
+    display: flex;
+    align-items: center;
+    height: 440px;
+    width: 200%;
+    /*background-color: red;*/
+    transition: height 0.2s ease;
+}
+
+.form-login {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.form-signup {
+    width: 50%;
+    padding: 30px;
+    background-color: #fff;
+}
+
+.active.login {
+    margin-left: -50%;
+}
+
+.active.forms {
+    height: 600px;
+}
+
+.title {
+    position: relative;
+    font-size: 27px;
+    font-weight: 600;
+}
+
+
+.title::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    height: 3px;
+    width: 30px;
+    background-color: #b58c10;
+    border-radius: 25px;
+}
+
+
+.input-field {
+    position: relative;
+    height: 50px;
+    width: 100%;
+    margin-top: 30px;
+}
+
+.input-field input {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    padding: 0 35px;
+    border: none;
+    outline: none;
+    font-size: 16p;
+    border-bottom: 2px solid #ccc;
+    border-top: 2px solid transparent;
+    transition: all 0.2s ease;
+}
+
+/*focus the*/
+.input-field input:is(:focus, :valid) {
+    border-bottom-color: #4070f4;
+}
+
+.input-field i {
+    position: absolute;
+    top: 50%;
+    left: 0;
+    transform: translateY(-50%);
+    color: #999;
+    font-size: 23px;
+    transition: all 0.2s ease;
+
+}
+
+/*focus the icons */
+.input-field input:is(:focus, :valid)~i {
+    color: #4070f4;
+}
+
+
+/*.input-field showHidePw {
+    right: 0;
+    cursor: pointer;
+    padding: 10px;
+}*/
+
+.checkbox-text {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+
+.checkbox-content {
+    display: flex;
+    align-items: center;
+}
+
+/*.checkbox-content input {
+    accent-color: #4070f4;
+    margin: 0 8px -2px 4px;
+}*/
+
+.text {
+    color: #333;
+    font-size: 14px;
+}
+
+.a.text {
+    color: #4070f4;
+    text-decoration: none;
+}
+
+.a:hover {
+    text-decoration: underline;
+}
+
+.button {
+    margin-top: 35px;
+}
+
+.button input {
+    border: none;
+    color: #fff;
+    font-size: 17px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    border-radius: 6px;
+    background-color: #b58c10;
+    cursor: pointer;
+    transform: all 0.3s ease;
+}
+
+.button input:hover {
+    background-color: #b58c10;
+}
+
+.login-signup {
+    margin-top: 30px;
+    text-align: center;
+}
+
+/*CKV*/
+.ckv-green, .ckv-blue, .compare-ckv{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#swap-ckv{
+    background-color: rgb(50,162,71,0.9);
+    border: none;
+}
+
+
+/*ALG*/
+
+.alg-purple{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+/*CROSS*/
+.cross-blue, .cross-gold, .compare-cross{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#swap-cross{
+    background-color: rgb(71,117,185,0.9);
+    border: none;
+}
+
+/*MINN*/
+.minn-red, .minn-blue, .compare-minn{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#swap-minn{
+    background-color: rgb(238,29,35,0.9);
+    border: none;
+}
+
+/*TNTEC*/
+.tech-gold, .tech-purple{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+#swap-tech{
+    background-color: rgb(255,215,0);
+    border: none;
+}
+
+
+/*REWARDS*/
+.rewards{
+    display: flex;
+    flex-direction: column;
+}
+
+.section-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-content: space-between;
+    width: 85vw;
+}
+
+.section-two{
+    display: flex;
+    flex-direction: row;
+    width: 85vw;
+}
+
+.card-body{
+    height: max-content;
+    width: 100%;
+}

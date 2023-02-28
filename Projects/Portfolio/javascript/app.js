@@ -20,6 +20,14 @@
         $(document).on('click', '.nostalgia-enterprises-redirect', function(){
             window.open("projects/nostalgia-enterprises/nostalgia-enterprises.html")
         })
+        //UCHRA Dashboard
+        $(document).on('click', '.uchra-dash-redirect', function(){
+            window.open("projects/UCHRA-dash/Cookeville.html")
+        })
+        //UCHRA Rewards
+        $(document).on('click', '.uchra-rewards-redirect', function(){
+            window.open("projects/UCHRA-rewards/rewards-login.html")
+        })
 
 // SWEET ALERTS
     //EMAIL
@@ -90,7 +98,39 @@
             // preConfirm: false,
         })
         })
-
+    //Personal Portfolio
+        $(document).on('click', '.personal-portfolio-card',function(){
+            Swal.fire({
+                width: '35rem',
+                title: 'Personal Portfolio',
+                text: 'A project within a project. This is being used to display all my other works including things I have done before and after graduation!',
+                confirmButtonText: 'Close',
+                confirmButtonColor: '#DC3545',
+                // preConfirm: false,
+            })
+            })
+    //UCHRA Dashboard
+        $(document).on('click', '.uchra-dash-card',function(){
+            Swal.fire({
+                width: '35rem',
+                title: 'UCHRA Dashboard',
+                text: 'The first part of my senior capstone project where the Upper Cumberland Human Resource Agency needed a way to display and analyze data. With this dashboard they can adjust bus routes and add routes based on which stops have the most boarded passengers.',
+                confirmButtonText: 'Close',
+                confirmButtonColor: '#DC3545',
+                // preConfirm: false,
+            })
+            })
+    //UCHRA Rewards App
+    $(document).on('click', '.uchra-rewards-card',function(){
+        Swal.fire({
+            width: '35rem',
+            title: 'UCHRA Rewards App',
+            text: 'The second part of my senior capstone project. This web application was used to reward frequent passengers by giving them discounts, and after 9 rides the 10th one would be free.',
+            confirmButtonText: 'Close',
+            confirmButtonColor: '#DC3545',
+            // preConfirm: false,
+        })
+        })
 
 
 

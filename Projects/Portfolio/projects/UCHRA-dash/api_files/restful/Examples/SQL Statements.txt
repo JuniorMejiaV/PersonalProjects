@@ -1,0 +1,17 @@
+Passengers Per Stop
+SELECT stop, SUM(Total_Passengers) FROM historic_data WHERE County_Route = ? GROUP BY stop;
+
+Number of X
+
+
+
+Popular Stops
+SELECT stop FROM historic_data WHERE Total_Passengers >= (SELECT AVG(Total_Passengers) FROM historic_data) GROUP BY stop;
+
+
+Unpopular Stops
+SELECT stop FROM historic_data WHERE Total_Passengers < (SELECT AVG(Total_Passengers) FROM historic_data) GROUP BY stop;
+
+
+Count Veteran
+SELECT COUNT(Veteran_Status) AS Total_Veteran FROM cust_account WHERE Veteran_Status = 'Yes';

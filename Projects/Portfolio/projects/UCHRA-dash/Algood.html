@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../UCHRA-dash/css/dashboard-style.css">
+    <title>Algood</title>
+</head>
+<body class="sidebar-mini layout-fixed" onload="updateChart()">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light" aria-label="Top Navigation"><!-- Top Navbar -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button" aria-label="Push Menu"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" id="btnLogout"  href="#" role="button" aria-label="Logout button">
+      <i class="far fa-sign-out"></i>
+          </a>
+      </li>
+      </ul>
+    </nav>
+
+    <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #121212;"  aria-label="Sidebar"><!-- Main Sidebar Container -->
+      <a href="Cookeville.html" class="brand-link">
+        <img src="images/publictransportation.png" class="brand-image elevation-3" style="opacity: .8" alt="UCHRA Public Transportation Logo">
+        <span class="brand-text font-weight-light" style="color: black;">.</span>
+      </a>
+      <div class="sidebar">
+        <nav class="mt-2">
+          <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+              <li class="nav-item menu-open">
+                <a href="#" class="nav-link" aria-label="Locations Available">
+                <i class="fas fa-map-marker-alt"></i>
+                  <p>Locations<i class="right fas fa-angle-left"></i></p>
+                </a>
+                <ul class="nav nav-treeview">
+                  <li class="nav-item active">
+                    <a href="Cookeville.html" class="nav-link" aria-label="Cookeville">
+                      <i class="far fa-city"></i><p> Cookeville</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Algood.html" class="nav-link active bg-primary" aria-label="Algood">
+                      <i class="far fa-city"></i><p> Algood</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="Crossville.html" class="nav-link" aria-label="Crossville">
+                      <i class="far fa-city"></i><p> Crossville</p>
+                    </a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="McMinnville.html" class="nav-link" aria-label="McMinnville">
+                      <i class="far fa-city"></i><p> McMinnville</p>
+                    </a>
+                  </li>
+                  <li class="nav-item user-panel">
+                    <a href="TnTech.html" class="nav-link" aria-label="TnTech">
+                      <i class="far fa-university"></i><p> TnTech</p>
+                    </a>
+                  </li>
+                </ul>
+              </li>
+              <li class="nav-item ">
+                <a href="Rewards.html" class="nav-link" aria-label="Reward Data">
+                  <i class="far fa-award"></i><p> Reward Data</p>
+                </a>
+              </li>
+        </nav>
+      </div>
+    </aside>
+
+    <div class="content-wrapper pt-3" id="cross-page" style="background-color: rgb(244,246,249);"><!--MAIN BODY-->
+      <div class="content-title" aria-label="Cookeville"><!--HEADING-->
+        <h2>Algood</h2>
+      </div>
+      <div class="container-buttons mr-3 ml-3 mb-3">
+        <div class="filter"><!--TIME FILTER-->
+          <button type="button" id="btnYearAlg" class="btn btn-outline-dark active" aria-label="Filter Year">Year</button>
+          <button type="button" id="btnMonthAlg" class="btn btn-outline-dark" aria-label="Filter Month">Month</button>
+          <button type="button" id="btnWeekAlg" class="btn btn-outline-dark" aria-label="Filter Week">Week</button>
+          <button type="button" id="btnDayAlg" class="btn btn-outline-dark" aria-label="Filter Day">Day</button>
+        </div>
+      </div>
+
+      <div class="content-graphs"><!--GRAPHS-->
+        <div class="alg-purple graph-flexbox col-sm-6 col-md-9 col-lg-12 col-xl-12">
+          <div class="card col-12" aria-label="Average Passenger Purple Route">
+            <div class="card-header">
+              <h3 class="card-title">Avg. Passenger</h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="maximize" aria-label="Maximize button"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="card-body">
+                <canvas class="canvas" id="alg-101-purple" width="1235" height="190" style="background-color: white;"></canvas>
+            </div>
+          </div>
+          <div class="card col-5" aria-label="Popular Stops Purple Route">
+            <div class="card-header">
+              <h3 class="card-title">Popular Stops</h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="maximize" aria-label="Maximize button"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="card-body">
+                <canvas class="canvas" id="alg-102-purple" width="450" height="190" style="background-color: white;"></canvas>
+            </div>
+          </div>
+          <div class="card col-5" aria-label="Unpopular Stops Purple Route">
+            <div class="card-header">
+              <h3 class="card-title">Unpopular Stops</h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="maximize" aria-label="Maximize button"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="card-body">
+                <canvas class="canvas" id="alg-103-purple" width="450" height="190" style="background-color: white;"></canvas>
+            </div>
+          </div>
+          <div class="card col-12" aria-label="Average Trip Per Mile Purple Route">
+            <div class="card-header">
+              <h3 class="card-title">Avg. Trip Per Mile</h3>
+              <div class="card-tools">
+                <button type="button" class="btn btn-tool" data-card-widget="maximize" aria-label="Maximize button"><i class="fas fa-expand"></i></button>
+              </div>
+            </div>
+            <div class="card-body">
+                <canvas class="canvas" id="alg-104-purple" width="1235" height="190" style="background-color: white;"></canvas>
+            </div>
+          </div>
+        </div><!--END PURPLE ROUTE-->
+      </div><!--END CONTENT GRAPH-->
+    </div><!--END MAIN BODY-->
+  </div><!--END WEBPAGE-->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../UCHRA-dash/js/dashboard-app.js"></script>
+  <script src="../UCHRA-dash/js/charts-alg.js"></script>
+</body>
+</html>

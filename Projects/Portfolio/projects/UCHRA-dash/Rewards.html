@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css" integrity="sha384-zCbKRCUGaJDkqS1kPbPd7TveP5iyJE0EjAuZQTgFLD2ylzuqKfdKlfG/eSrtxUkn" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/css/adminlte.min.css">
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="../UCHRA-dash/css/dashboard-style.css">
+    <title>Reward Information</title>
+</head>
+<body class="sidebar-mini layout-fixed" onload="updateChart()">
+  <div class="wrapper">
+    <nav class="main-header navbar navbar-expand navbar-white navbar-light" aria-label="Top Navigation"><!-- Top Navbar -->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" data-widget="pushmenu" href="#" role="button" aria-label="Push Menu"><i class="fas fa-bars"></i></a>
+        </li>
+      </ul>
+    
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+            <a class="nav-link" id="btnLogout" href="#" role="button" aria-label="Logout button">
+        <i class="far fa-sign-out"></i>
+            </a>
+        </li>
+      </ul>
+    </nav>
+        <aside class="main-sidebar sidebar-dark-primary elevation-4" style="background-color: #121212;" aria-label="Sidebar"><!-- Main Sidebar Container -->
+            <a href="Cookeville.html" class="brand-link">
+              <img src="images/publictransportation.png" class="brand-image elevation-3" style="opacity: .8" alt="UCHRA Public Transportation Logo">
+              <span class="brand-text font-weight-light" style="color: black;">.</span>
+            </a>
+            <div class="sidebar">
+              <nav class="mt-2">
+                <ul class="nav nav-pills nav-sidebar flex-column" data-widget="treeview" role="menu">
+                    <li class="nav-item menu-open">
+                      <a href="#" class="nav-link" aria-label="Locations Available">
+                      <i class="fas fa-map-marker-alt"></i>
+                        <p>Locations<i class="right fas fa-angle-left"></i></p>
+                      </a>
+                      <ul class="nav nav-treeview">
+                        <li class="nav-item">
+                          <a href="Cookeville.html" class="nav-link" aria-label="Cookeville">
+                            <i class="far fa-city "></i><p> Cookeville</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="Algood.html" class="nav-link" aria-label="Algood">
+                            <i class="far fa-city "></i><p> Algood</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="Crossville.html" class="nav-link" aria-label="Crossville">
+                            <i class="far fa-city "></i><p> Crossville</p>
+                          </a>
+                        </li>
+                        <li class="nav-item">
+                          <a href="McMinnville.html" class="nav-link" aria-label="McMinnville">
+                            <i class="far fa-city "></i><p> McMinnville</p>
+                          </a>
+                        </li>
+                        <li class="nav-item user-panel">
+                          <a href="TnTech.html" class="nav-link" aria-label="TnTech">
+                            <i class="far fa-university "></i><p> TnTech</p>
+                          </a>
+                        </li>
+                      </ul>
+                    </li>
+                    <li class="nav-item active">
+                      <a href="Rewards.html" class="nav-link active bg-primary" aria-label="Reward Data">
+                        <i class="far fa-award"></i><p> Reward Data</p>
+                      </a>
+                    </li>
+              </nav>
+            </div>
+        </aside>
+        <div class="content-wrapper pt-3" id="ckv-page" style="background-color: rgb(244,246,249);"><!--MAIN BODY-->
+            <div class="content-title mb-2" aria-label="Reward Data">
+                <h2>Rewards</h2>
+            </div>
+            <!-- <div class="container-buttons ml-3 mb-3">
+                <div class="filter">TIME FILTER
+                  <button type="button" id="btnDayCkv" class="btn btn-outline-dark" aria-label="Filter Day">Day</button>
+                  <button type="button" id="btnWeekCkv" class="btn btn-outline-dark" aria-label="Filter Week">Week</button>
+                  <button type="button" id="btnWeekCkv" class="btn btn-outline-dark" aria-label="Filter Month">Month</button>
+                  <button type="button" id="btnYearCkv" class="btn btn-outline-dark" aria-label="Filter Year">Year</button>
+                </div>
+            </div> -->
+            <div class="rewards content-graphs col-sm-6 col-md-9 col-lg-12 col-xl-12"><!--GRAPHS-->
+              <div class="section-one">
+                  <div class="card col-8 ml-2 mr-2">
+                    <div class="card-header" aria-label="Seniors">
+                      <h3 class="card-title">Age Group</h3>
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool maximize" data-card-widget="maximize" aria-label="Maximize button"><i class="fas fa-expand"></i></button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas class="canvas" id="ageGroup" style="background-color: white;"></canvas>
+                    </div>
+                  </div>
+                  <div class="card col-3 ml-2" aria-label="Veterans">
+                    <div class="card-header">
+                      <h3 class="card-title">Veterans</h3>
+                      <div class="card-tools">
+                        <button type="button" class="btn btn-tool maximize" data-card-widget="maximize" aria-label="Maximize button"><i class="fas fa-expand"></i></button>
+                      </div>
+                    </div>
+                    <div class="card-body">
+                        <canvas class="canvas" id="veterans" style="background-color: white;"></canvas>
+                    </div>
+                  </div>
+              </div>
+              <div class="section-two">
+                <div class="card col-8 ml-2 mr-2" aria-label="Minorities">
+                  <div class="card-header">
+                    <h3 class="card-title">Ethnicity</h3>
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool maximize" data-card-widget="maximize" aria-label="Maximize button"><i class="fas fa-expand"></i></button>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                      <canvas class="canvas" id="ethnicity" style="background-color: white;"></canvas>
+                  </div>
+                </div>
+                <div class="card col-3 ml-2" aria-label="Disabled">
+                  <div class="card-header">
+                    <h3 class="card-title">People with Disabilities</h3>
+                    <div class="card-tools">
+                      <button type="button" class="btn btn-tool maximize" data-card-widget="maximize" aria-label="Maximize button"><i class="fas fa-expand"></i></button>
+                    </div>
+                  </div>
+                  <div class="card-body">
+                      <canvas class="canvas" id="disability" style="background-color: white;"></canvas>
+                  </div>
+                </div>
+              </div>
+              </div>
+            </div><!--END CONTENT GRAPH-->
+        </div><!--END MAIN BODY-->
+    </div><!--END WEBPAGE-->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-fQybjgWLrvvRgtW6bFlB7jaZrFsaBXjsOMm/tB9LTS58ONXgqbR9W8oWht/amnpF" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/admin-lte@3.2/dist/js/adminlte.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.0.0/dist/chart.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-plugin-datalabels@2.0.0"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chartjs-adapter-date-fns/dist/chartjs-adapter-date-fns.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="../UCHRA-dash/js/dashboard-app.js"></script>
+    <script src="../UCHRA-dash/js/charts-rewards.js"></script>
+    <script src="js/html2pdf.bundle.min.js"></script>
+</body>
+</html>

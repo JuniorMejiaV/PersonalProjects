@@ -1,0 +1,19 @@
+// CREATE STORED PROCEDURE
+CREATE PROCEDURE CleanSessions
+AS
+DELETE FROM session WHERE SessionStart < NOW() - INTERVAL 8 HOUR OR SessionLastActivity < NOW() - INTERVAL 1 HOUR
+GO;
+
+
+// EXECUTE STORED PROCEDURE
+EXEC CleanSessions;
+
+
+
+// CREATE SCHEDULED EVENT
+
+
+
+
+(All this can be done in PHPMyAdmin)
+

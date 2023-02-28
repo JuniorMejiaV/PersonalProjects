@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <link rel="stylesheet" href="../UCHRA-rewards/reward-css/reward-style.css">
+    <title>Login</title>
+</head>
+<body>
+
+  <div class="container">
+    <div class="card col-11">
+      <div class="logo mt-2 mb-2">
+        <img src="../UCHRA-dash/images/publictransportation.png" alt="UCHRA Public Transportation Logo">
+      </div>
+      <div class="message mt-2 mb-2" aria-label="Please Enter, Your Phone Number">
+        <h5>Please Enter,</h5>
+        <h5>Your Phone Number</h5>
+      </div>
+      <fieldset class="input-set mt-2 mb-2">
+        <label for="phone" class="mb-0">Phone Number: </label>
+        <input type="tel" id="txtPhoneLogin" name="phone" class="tel-input" required pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="(xxx)-xxx-xxx" aria-label="Enter Phone Number">
+      </fieldset>
+      <div class="action-btn mt-2 mb-2">
+        <a href="../Rewards/rewards-profile.html" type="button" id="customerLogin" class="btn btn-lg btn-submit col-12 mt-2 mb-2" style="background-color: rgb(194,144,48);" aria-label="Submit Number">Submit</a>
+      </div>
+      <div class="login-signup">
+        <span class="text">Don't have a account?
+          <a href="rewards-signup.html" class="text signup-text"><u>Signup</u></a>
+        </span>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.1/jquery.min.js" integrity="sha512-aVKKRRi/Q/YV+4mjoKBsE4x3H+BkegoM/em46NNlCqNTmUYADjBbeNefNxYV7giUp0VxICtqdrbqU7iVaeZNXA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <script src="../UCHRA-rewards/reward-js/reward-app.js"></script>
+</body>
+
+</html>
