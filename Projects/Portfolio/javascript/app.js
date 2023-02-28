@@ -62,3 +62,4 @@ $(document).on('click', '.contact-btn', function(){
             })
         })
 
+window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};
