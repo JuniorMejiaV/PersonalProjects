@@ -1,0 +1,127 @@
+/* ALL PAGES */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Serif:ital,opsz,wght@0,8..144,400;0,8..144,500;0,8..144,600;0,8..144,700;1,8..144,400;1,8..144,500;1,8..144,600;1,8..144,700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto Serif', sans-serif;
+}
+
+.navbar-nav, .active{ /*Overrides the color of the active state class tag in bootstrap*/
+    color: #CBB129 !important;
+}
+
+body, html{
+    height: 100%;
+    margin: 0;
+}
+
+.navbar{
+    background-color: #002B4A;
+}
+
+.nav-link{
+    color: white;
+}
+
+.nav-link:hover{
+    color: #CBB129;
+} 
+
+.logo{
+    color: white;
+}
+
+/* HOME PAGE */
+
+.background-image{
+    position: relative;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url(../images/IMG_3334.jpg);
+    height: 50%;
+}
+
+.greeting{
+    height: 40%;
+    width: 100%;
+}
+
+.greeting-content{
+    height: max-content;
+}
+
+.project-btn{
+    color: white;
+}
+
+.project-btn:hover{
+    color: black;
+    background-color: #198754;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* EXPERIENCE */
+
+.icon-list{
+    list-style: none;
+}
+
+.tntechlogo, .twinlakeslogo, .itslogo, .saiclogo{
+    width: 10%;
+    height: 10%;
+}
+
+.school-info, .twinlakes-info, .its-info, .saic-info{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+hr.break{
+    border-top: 1px solid black;
+}
+
+/* CONTACT ME */
+
+.main-contact{
+    /* width: auto;
+    height: auto; */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact-card{
+    border-radius: 25px;
+    border: solid 1px black;
+}
+
+.card-body-contact{
+    margin: 10 10 10 10;
+    border-radius: 25px;
+}
+
+.fa-brands{
+    color: black;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: #002B4A;
+    color: white;
+    position: sticky;
+}
+
+.icon-list-footer{
+    color: white;
+    list-style: none;
+}
