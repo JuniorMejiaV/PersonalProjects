@@ -13,6 +13,11 @@
     color: #CBB129 !important;
 }
 
+.navbar-toggler{
+    color: white;
+    border-style: none;
+}
+
 body, html{
     height: 100%;
     margin: 0;
