@@ -31,7 +31,7 @@ body, html{
     color: white;
 }
 
-.nav-link:hover{
+.logo:hover{
     color: #CBB129;
 } 
 
@@ -59,13 +59,14 @@ body, html{
     height: max-content;
 }
 
-.project-btn{
+.project-btn, .contact-btn{
     color: white;
+    background-color: #CBB129;
 }
 
-.project-btn:hover{
+.project-btn:hover, .contact-btn:hover{
     color: black;
-    background-color: #198754;
+    background-color: rgb(173, 150, 28);
 }
 
 a{
