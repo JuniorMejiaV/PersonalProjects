@@ -76,6 +76,16 @@
             }
         })
         })
+        //RESUME DOWNLOAD
+    $(document).on('click', '#resumeDownload',function(){
+        Swal.fire({
+            icon: 'success',
+            title: 'Resumé Dowloaded! ',
+            confirmButtonText: 'Okay',
+            confirmButtonColor: '#198754',
+            // preConfirm: false,
+        })
+        })
     //First Project
     $(document).on('click', '.first-project-card',function(){
         Swal.fire({

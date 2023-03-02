@@ -39,6 +39,16 @@ body, html{
     color: white;
 }
 
+#Buttons{
+    color: white;
+    background-color: #CBB129;
+}
+
+#Buttons:hover{
+    color: black;
+    background-color: rgb(173, 150, 28);
+}
+
 /* HOME PAGE */
 
 .background-image{
@@ -59,32 +69,38 @@ body, html{
     height: max-content;
 }
 
-.project-btn, .contact-btn{
-    color: white;
-    background-color: #CBB129;
-}
-
-.project-btn:hover, .contact-btn:hover{
-    color: black;
-    background-color: rgb(173, 150, 28);
-}
-
 a{
-    text-decoration: none;
+    text-decoration: hidden;
+}
+
+/* PROJECTS */
+.card-projects{
+    width: auto;
+    border-color: black;
+    border-width: 1px;
+}
+
+.card-projects2{ /*TEMPORARY DELETE LATER*/
+    visibility: hidden;
+}
+
+.new-projects, .old-projects{
+    width: 100dvw;
 }
 
 /* EXPERIENCE */
 
 .icon-list{
     list-style: none;
+    padding: 0%;
 }
 
-.tntechlogo, .twinlakeslogo, .itslogo, .saiclogo{
+.tntechlogo, .twinlakeslogo, .itslogo, .saiclogo, .futurologo, .coblogo{
     width: 10%;
     height: 10%;
 }
 
-.school-info, .twinlakes-info, .its-info, .saic-info{
+.school-info, .twinlakes-info, .its-info, .saic-info, .futuro-info, .cob-info{
     width: 100%;
     display: flex;
     flex-direction: row;
