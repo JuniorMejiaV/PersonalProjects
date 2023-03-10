@@ -1,17 +1,5 @@
 //BUTTONS
     //Redirect Links
-        //Projects Page
-        $(document).on('click', '.project-btn', function(){
-            window.location.href = 'projects.html'
-        })
-        //Experience Page
-        $(document).on('click', '.experience-btn', function(){
-            window.location.href = 'experience.html'
-        })
-        //Contact Page
-        $(document).on('click', '.contact-btn', function(){
-            window.location.href = 'contact.html'
-        })
         //Information Card Page
         $(document).on('click', '.first-project-redirect', function(){
             window.open("projects/info-card/info-card.html")
@@ -89,59 +77,60 @@
     //First Project
     $(document).on('click', '.first-project-card',function(){
         Swal.fire({
-            width: '35rem',
-            title: 'My Very First Project!',
-            text: 'This was my introduction to programming in my Business Applications Dev II course, where I learned the basics of HTML, CSS, and JS. Although its rough around the edges, it shows the progress I have made over the years.',
+            imageUrl: 'images/FirstProject.PNG',
+            titleText: 'My Very First Project!',
+            text: 'A basic card containing information about me. This was introduction to web development. Not my best work but it only gets better from here!',
+            footer: 'Status: Incomplete',
             confirmButtonText: 'Close',
             confirmButtonColor: '#DC3545',
-            // preConfirm: false,
+
         })
         })
     //Nostalgia Enterprises
     $(document).on('click', '.nostalgia-enterprises-card',function(){
         Swal.fire({
-            width: '35rem',
+            imageUrl: 'images/NostalgiaEnterprises.PNG',
             title: 'Nostalgia Enterprises',
-            text: 'The first "Exam" in my Applications Dev class. Where we used various technologies to display employee information using APIs. Not fully functional but will be revised in the future.',
+            text: 'The first "Exam" in my Applications Dev class. Where we used various technologies to display employee information using APIs.',
+            footer: 'Status: Incomplete',
             confirmButtonText: 'Close',
             confirmButtonColor: '#DC3545',
-            // preConfirm: false,
         })
         })
     //Personal Portfolio
         $(document).on('click', '.personal-portfolio-card',function(){
             Swal.fire({
-                width: '35rem',
+                imageUrl: 'images/PersonalWebsite.PNG',
                 title: 'Personal Portfolio',
-                text: 'A project within a project. This is being used to display all my other works including things I have done before and after graduation!',
+                text: 'A project within a project. This is being used to display all my other projects including things I have done before and after graduation!',
+                footer: 'Status: In-progress',
                 confirmButtonText: 'Close',
                 confirmButtonColor: '#DC3545',
-                // preConfirm: false,
             })
             })
     //UCHRA Dashboard
         $(document).on('click', '.uchra-dash-card',function(){
             Swal.fire({
-                width: '35rem',
+                imageUrl: 'images/UCHRADashboard.PNG',
                 title: 'UCHRA Dashboard',
                 text: 'The first part of my senior capstone project where the Upper Cumberland Human Resource Agency needed a way to display and analyze data. With this dashboard they can adjust bus routes and add routes based on which stops have the most boarded passengers.',
+                footer: 'Status: Incomplete, but revision coming soon!',
                 confirmButtonText: 'Close',
                 confirmButtonColor: '#DC3545',
-                // preConfirm: false,
             })
             })
     //UCHRA Rewards App
     $(document).on('click', '.uchra-rewards-card',function(){
         Swal.fire({
-            width: '35rem',
+            imageUrl: 'images/UCHRARewards.PNG',
             title: 'UCHRA Rewards App',
+            text: 'Hello world',
             text: 'The second part of my senior capstone project. This web application was used to reward frequent passengers by giving them discounts, and after 9 rides the 10th one would be free.',
+            footer: 'Status: Incomplete, but revision coming soon!',
             confirmButtonText: 'Close',
             confirmButtonColor: '#DC3545',
-            // preConfirm: false,
         })
         })
-
 
 
 window.formbutton=window.formbutton||function(){(formbutton.q=formbutton.q||[]).push(arguments)};

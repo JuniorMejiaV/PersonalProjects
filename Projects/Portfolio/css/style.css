@@ -74,14 +74,25 @@ a{
 }
 
 /* PROJECTS */
+
 .card-projects{
-    width: auto;
+    /* width: 364.25; */
     border-color: black;
     border-width: 1px;
 }
 
-.card-projects2{ /*TEMPORARY DELETE LATER*/
+.card-old-projects{
+    width: fit-content;
+    border-color: black;
+    border-width: 1px;
+}
+
+/* .card-projects2{ TEMPORARY DELETE LATER
     visibility: hidden;
+} */
+
+br{
+    visibility: collapse;
 }
 
 .new-projects, .old-projects{
