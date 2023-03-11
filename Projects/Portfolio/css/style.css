@@ -118,6 +118,25 @@ br{
     justify-content: space-between;
 }
 
+/* ABOUT ME  */
+
+.main-aboutme, .more{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.introduction{
+    width: auto;
+}
+
+/* .picture{
+    background-image: url(../images/nature.png);
+    width: 500;
+    height: 600;
+} */
+
 hr.break{
     border-top: 1px solid black;
 }
