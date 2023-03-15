@@ -131,10 +131,12 @@ br{
     width: auto;
 }
 
-/* .picture{
-    background-image: url(../images/nature.png);
-    width: 500;
-    height: 600;
+.items-games{
+    height: 10rem;
+}
+
+/* .game-img{
+    height: 30% !important;
 } */
 
 hr.break{

@@ -38,7 +38,8 @@
         </div>
     </nav>
 
-    <div class="main-aboutme d-flex flex-column">
+    <div class="main-aboutme d-flex flex-column col-12">
+
         <div class="introduction d-flex flex-row align-items-center">
             <div class="picture d-flex mx-3 my-3">
                 <img src="../images/nature.png" alt="">
@@ -49,38 +50,125 @@
             </div>
         </div>
 
-        <div class="more d-flex flex-column text-center align-items-start mx-3 my-3">
-            <div class="cultural-heritage d-flex mx-3 my-3">
-                <h1>Cultural Heritage</h1>
-                <!-- <h3>Where I am from</h3>
-                <h3>Where My Family is from</h3>
-                add cool maps n shit showing Honduras
-                <h3>Favorite Foods and Dishes</h3> -->
+        <div class="more d-flex flex-column text-center justify-content-center mx-3 my-3 col-12">
+            <div class="Interests d-flex flex-row gap-2 col-12">
+                <div class="Movies card col-4 mx-3 my-3">
+                    <div class="card-body col-12">
+                        <h5 class="card-title">Movies & Tv Shows</h5>
+                        <ul class="list-group d-flex flex-row flex-wrap justify-content-center gap-2 col-12">
+                            <div class="items d-flex flex-column col-3">
+                                <img id="movie-img" src="images\marvel.jpg" alt="Marvel Universe">
+                                <li class="list list-group-item">Avengers</li>
+                            </div>
+                            <div class="items d-flex flex-column col-3">
+                                <img id="movie-img" src="images\starwars.jpg" alt="Star Wars">
+                                <li class="list list-group-item">Star Wars</li>
+                            </div>
+                            <div class="items d-flex flex-column col-3">
+                                <img id="movie-img" src="images\fast&furious.webp" alt="Fast & Furious">
+                                <li class="list list-group-item">Fast & Furious</li>
+                            </div>
+                            <div class="items d-flex flex-column col-3">
+                                <img id="movie-img" src="images\theoffice.jpg" alt="The Office">
+                                <li class="list list-group-item">The Office</li>
+                            </div>
+                            <div class="items d-flex flex-column col-3">
+                                <img id="movie-img" src="images\familyguy.jpg" alt="Family Guy">
+                                <li class="list list-group-item">Family Guy</li>
+                            </div>
+                            <div class="items d-flex flex-column col-3">
+                                <img id="movie-img" src="images\bobsburgers.jpg" alt="Bobs Burgers">
+                                <li class="list list-group-item">Bobs Burgers</li>
+                            </div>
+                        </ul>
+                    </div>
+                </div>
+                <div class="Hobbies card col-4 mx-3 my-3">
+                    <div class="card-body col-12">
+                        <h5 class="card-title">Hobbies</h5>
+                        <div class="list-group">
+                            <a href="#" class="list-group-item" aria-current="true">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Video Games</h5>
+                                </div>
+                                <p class="mb-1">Games I own</p>
+                                <ul class="list-group list-group-horizontal">
+                                    <li class="list-group-item flex-fill">Warzone</li>
+                                    <li class="list-group-item flex-fill">Fallout 4</li>
+                                    <li class="list-group-item flex-fill">Red Dead II</li>
+                                    <li class="list-group-item flex-fill">GTA V</li>
+                                  </ul>
+                                  <ul class="list-group list-group-horizontal d-flex ">
+                                    <li class="list-group-item flex-fill">Stardew Valley</li>
+                                    <li class="list-group-item flex-fill">Rainbow 6 Seige</li>
+                                    <li class="list-group-item">Metro Redux</li>
+                                    <li class="list-group-item">Metro Last Light</li>
+                                    <li class="list-group-item">Apexx Legends</li>
+                                  </ul>
+                                <small>Not much of a gamer but I try to when I have free time.</small>
+                            </a>
+                            <a href="#" class="list-group-item" aria-current="true">
+                                <div class="d-flex w-100 justify-content-between">
+                                    <h5 class="mb-1">Favorite Teams</h5>
+                                </div>
+                                <p class="mb-1">Teams</p>
+                                <ul class="list-group list-group-horizontal">
+                                    <li class="list-group-item">Nashville SC</li>
+                                    <li class="list-group-item">Real Madrid</li>
+                                    <li class="list-group-item">Honduras National Team</li>
+                                    <li class="list-group-item">United States National team</li>
+                                </ul>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="More-facts card col-3 mx-3 my-3">
+                    <div class="card-body col-12">
+                        <h5 class="card-title">Facts</h5>
+                        <ul class="list-group d-flex flex-row flex-wrap justify-content-center gap-2 col-12">
+                            <a href="#" class="list-group-item w-100">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"><u>About Me</u></h5>
+                                </div>
+                                <div class="moreAboutMe d-flex align-items-start flex-column">
+                                    <p class="mb-1">Birthday is on June 24.</p>
+                                    <p class="mb-1">I listen to rap and hip hop.</p>
+                                    <p class="mb-1">Favorite food is Asian Cuisne.</p>
+                                    <p class="mb-1">Favoirte sport is soccer.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item w-100">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"><u>Goals</u></h5>
+                                </div>
+                                <div class="moreAboutMe d-flex align-items-start flex-column">
+                                    <p class="mb-1">Find a career I love and become a expert.</p>
+                                    <p class="mb-1">Give back to my community and those around me.</p>
+                                    <p class="mb-1">Visit my families home country.</p>
+                                    <p class="mb-1">Learn and explore my roots and family.</p>
+                                    <p class="mb-1">Become the best version of myself.</p>
+                                </div>
+                            </a>
+                            <a href="#" class="list-group-item w-100">
+                                <div class="d-flex w-100 justify-content-between">
+                                <h5 class="mb-1"><u>Top 5 things on my bucket list</u></h5>
+                                </div>
+                                <div class="moreAboutMe d-flex align-items-start flex-column">
+                                    <p class="mb-1">Take a dream vacation in Eurpoe</p>
+                                    <p class="mb-1">See Nashville in the MLS final cup.</p>
+                                    <p class="mb-1">Watch the world cup final in person.</p>
+                                    <p class="mb-1">Explore a cave.</p>
+                                    <p class="mb-1">Go skydiving.</p>
+                                </div>
+                            </a>
+                        </ul>
+                    </div>
+                </div>
             </div>
-            <div class="Interests d-flex mx-3 my-3">
-                <h1>Hobbies and Interests</h1>
-                <!-- <h3>Favorite Movies and Tv Shows</h3>
-                <h3>Travel and adventure</h3>
-                <h3>Technology and gaming</h3>
-                <h3>Pets and animals.</h3> -->
-            </div>
-            <div class="Sports d-flex mx-3 my-3">
-                <h1>Sports</h1>
-                <!-- <h3>Favorite sports</h3>
-                <h3>Favorite Sports Teams</h3> -->
-            </div>
-            <div class="Sports d-flex mx-3 my-3">
-                <h1>Sports</h1>
-                <!-- <h3>Favorite sports</h3>
-                <h3>Favorite Sports Teams</h3> -->
-            </div>
-            <div class="Sports d-flex mx-3 my-3">
-                <h1>My best Friend</h1>
-                <!-- <h3>Favorite sports</h3>
-                <h3>Favorite Sports Teams</h3> -->
-            </div>
-        </div>
 
+
+
+        </div>
 
 
     </div>
