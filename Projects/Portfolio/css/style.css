@@ -127,21 +127,19 @@ br{
     justify-content: center;
 }
 
-.introduction{
-    width: auto;
+.introduction,.backgroundBio, .rockybio{
+    border: none;
 }
 
-.items-games{
-    height: 10rem;
+.heading-aboutme{
+    width: 100%;
 }
-
-/* .game-img{
-    height: 30% !important;
-} */
 
 hr.break{
     border-top: 1px solid black;
 }
+
+.rocky-bio
 
 /* CONTACT ME */
 
